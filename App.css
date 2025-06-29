@@ -1,24 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+body {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f9fc;
+  color: #333;
+}
+
 .container {
-  font-family: Arial, sans-serif;
+  max-width: 600px;
+  margin: 40px auto;
   padding: 20px;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   text-align: center;
 }
+
 .logo {
   width: 80px;
+  margin-bottom: 10px;
+}
+
+h1 {
+  margin-bottom: 10px;
+  font-size: 28px;
+  font-weight: 600;
+  color: #0077cc;
+}
+
+.language-switch select {
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
   margin-bottom: 20px;
 }
-.form input, .form button, .language-switch select {
-  padding: 10px;
-  margin: 10px;
-  width: 80%;
-  max-width: 400px;
+
+.form input {
+  padding: 12px;
+  margin: 8px 0;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
 }
-.results, .chat-box {
-  background: #f1f1f1;
+
+.form button {
+  padding: 12px 20px;
+  margin-top: 10px;
+  background-color: #0077cc;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.form button:hover {
+  background-color: #005fa3;
+}
+
+.results {
+  background-color: #f0f8ff;
+  margin-top: 20px;
   padding: 15px;
-  margin-top: 20px;
-  border-radius: 8px;
+  border-radius: 10px;
+  text-align: left;
 }
-.chat-button {
+
+.results h2 {
+  color: #0077cc;
+  margin-bottom: 10px;
+}
+
+.chat-button button {
   margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.chat-button button:hover {
+  background-color: #218838;
+}
+
+.chat-box {
+  background-color: #e9f5eb;
+  padding: 15px;
+  margin-top: 15px;
+  border-radius: 10px;
+  text-align: left;
+}
+
+.chat-box input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 8px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
 }
